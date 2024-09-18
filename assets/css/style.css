@@ -136,7 +136,11 @@ min-height:700px;
     #home a i {
         display:table;
         font-size:150px;
-    
+        color: #ef8376;
+
+}
+#home a:hover i {
+    color: #262626; /* 鼠标悬停时颜色变为黑色 */
 }
 /*========================================
     ABOUT SECTION
