@@ -58,7 +58,7 @@ color: #000;
 /*CHANGING COLOR  SCROLLSPY ON LINK ACTIVE  导航栏HOME的颜色*/
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
 color: #fff;
-background-color: #7eb9f8;
+    background: linear-gradient(to bottom, #4b0082, #d3a5d0);
 }
 .copyrights{
 	text-indent:-9999px;
@@ -127,6 +127,7 @@ min-height:700px;
     background-position: center; /* 图片居中对齐 */
     background-repeat: no-repeat; /* 防止图片重复 */
     animation: backgroundImageAnimation 120s infinite; /* 动画持续时间120秒，循环播放 */
+    transition: background-image 2s ease-in-out; /* 过渡效果 */
 }
     #home h1,#home h3 {
         color:#fff;
