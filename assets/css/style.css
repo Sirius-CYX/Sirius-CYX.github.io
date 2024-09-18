@@ -137,40 +137,73 @@ min-height:700px;
     #home a i {
         display:table;
         font-size:150px;
-        color: #ef8376;
+        color: #262626;
 
 }
 #home a:hover i {
-    color: #262626; /* 鼠标悬停时颜色变为黑色 */
+    color: #ef8376; /* 鼠标悬停时颜色变为黑色 */
 }
 /*========================================
     ABOUT SECTION
     ======================================*/
 #about {
-background-color: #66B8F0;
-color: #fff;
-min-height:700px;
-}
-.panel > .panel-heading {
-position: relative;
-padding: 15px;
-}
-.panel-title > a.collapsed:after {
-content: '+';
-position: absolute;
-right: 24px;
-}
+    background-image: url('images/img_bg_4.jpg'); /* 替换为你的图片路径 */
+    background-size: cover; /* 确保图片覆盖整个区域 */
+    background-position: center; /* 图片居中显示 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    min-height: 700px;
 
-.panel-title > a:after {
- content: '-';
-position: absolute;
-right: 24px;
 
-}
-.panel {
-color:#000;
-}
+    .img-rounded {
+        border-radius: 8px; /* 圆角效果 */
+        margin-bottom: 20px; /* 图片底部的间距 */
+        width: 100%; /* 确保图片适应其父容器的宽度 */
+    }
 
+    .mb-4 {
+        margin-bottom: 30px; /* 扩展框底部的间距，增加间距 */
+    }
+
+    .panel-group {
+        margin-top: 0; /* 确保扩展框从顶部开始对齐 */
+    }
+
+    .panel {
+        margin-bottom: 30px; /* 扩展框之间的间距 */
+    }
+
+    .col-md-4 {
+        padding-left: 15px; /* 右侧内边距 */
+        padding-right: 15px; /* 右侧内边距 */
+    }
+
+    .row {
+        margin-left: -15px; /* 消除列之间的外边距 */
+        margin-right: -15px; /* 消除列之间的外边距 */
+    }
+
+    .panel > .panel-heading {
+        position: relative;
+        padding: 15px;
+    }
+
+    .panel-title > a.collapsed:after {
+        content: '+';
+        position: absolute;
+        right: 24px;
+    }
+
+    .panel-title > a:after {
+        content: '-';
+        position: absolute;
+        right: 24px;
+
+    }
+
+    .panel {
+        color: #000;
+    }
+}
  /*========================================
     PORTFOLIO SECTION
     ======================================*/
@@ -224,9 +257,9 @@ padding:20px;
     ======================================*/
 #footer {
 
-background-color:#7eb9f8;
-color: #fff;
-padding: 20px 50px 20px 50px;
-text-align: right;
-border-top: 1px solid #7eb9f8;
+    background-color: #7eb9f8;
+    color: #fff;
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+    border-top: 1px solid #7eb9f8;
 }
