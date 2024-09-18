@@ -239,6 +239,7 @@ min-height:700px;
     ======================================*/
 #contact {
     min-height:400px;
+    /*background-color: #483949; !* 这里添加背景颜色 *!*/
     }
 #contact .form-control {
     height:60px;
@@ -247,6 +248,7 @@ min-height:700px;
 width: 100%;
 min-height: 350px;
 border: 1px solid #e1e1e1;
+
 }
 .add {
 font-size:20px;
@@ -257,7 +259,7 @@ padding:20px;
     ======================================*/
 #footer {
 
-    background-color: #7eb9f8;
+    background-color: #483949;
     color: #fff;
     padding: 20px 50px 20px 50px;
     text-align: right;
