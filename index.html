@@ -23,6 +23,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 <!--引入了三个CSS文件，包括Bootstrap样式库、Font Awesome图标库以及自定义样式文件。
   引入了Google字体Open Sans-->
+<!--	<style>-->
+<!--		/* 针对特定滚动的元素启用平滑滚动 */-->
+<!--		#next-section {-->
+<!--			scroll-behavior: smooth;-->
+<!--		}-->
+<!--	</style>-->
 </head>
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!--NAVBAR SECTION-->
@@ -57,8 +63,9 @@
 		<div class="row text-center pad-top" >
 			<div class="col-md-12 pad-top-more">
 				<h1>Ready to Launch  </h1>
-				<a href="#" class="btn btn-lg pad-top">
-					<i class="fa fa-bomb fa-5x" ></i>
+<!--				<a href="#" class="btn btn-lg pad-top">-->
+				<a href="#portfolio" class="btn btn-lg pad-top" id="scroll-button">
+					<i class="fa fa-rocket fa-5x" ></i>
 				</a>
 				<h3>Lorem ipsum dolor sit amet </h3>
 				<p class="col-md-8 col-md-offset-2">
@@ -69,6 +76,7 @@
 
 		</div>
 	</div>
+
 </section>
 <!--END SECTION-->
 <!--定义了页面的首页部分，使用text-center类让文字居中。
@@ -743,5 +751,14 @@
 <script src="assets/plugins/jquery.easing.min.js"></script>
 <!-- CUSTOM SCRIPTS   -->
 <script src="assets/js/custom.js"></script>
+<script>
+	// 为按钮添加点击事件监听器，触发平滑滚动
+	document.getElementById('scroll-button').addEventListener('click', function(event) {
+		event.preventDefault();  // 阻止默认跳转行为
+		document.querySelector('#portfolio').scrollIntoView({
+			behavior: 'smooth'  // 启用平滑滚动
+		});
+	});
+</script>
 </body>
 </html>
