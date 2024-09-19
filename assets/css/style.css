@@ -74,50 +74,29 @@ color: #fff;
     0% {
         background-image: url('images/header.jpg');
     }
-    6.25% {
+    12.5% {
         background-image: url('images/pic01.jpg');
     }
-    12.5% {
+    25% {
         background-image: url('images/pic02.jpg');
     }
-    18.75% {
+    37.5% {
         background-image: url('images/pic03.jpg');
     }
-    31.25% {
-        background-image: url('images/pic04.jpg');
-    }
-    37.5% {
+    50% {
         background-image: url('images/pic05.jpg');
     }
-    43.75% {
+    62.5% {
         background-image: url('images/pic06.jpg');
     }
-    50% {
+    75% {
         background-image: url('images/pic07.jpg');
     }
-    56.25% {
+    87.5% {
         background-image: url('images/pic08.jpg');
     }
-    62.5% {
-        background-image: url('images/pic09.jpg');
-    }
-    68.75% {
-        background-image: url('images/pic10.jpg');
-    }
-    75% {
-        background-image: url('images/pic11.jpg');
-    }
-    81.25% {
-        background-image: url('images/pic12.jpg');
-    }
-    87.5% {
-        background-image: url('images/pic13.jpg');
-    }
-    93.75% {
-        background-image: url('images/pic14.jpg');
-    }
     100% {
-        background-image: url('images/pic15.jpg'); /* 返回到第一张图片 */
+        background-image: url('images/header.jpg'); /* 返回到第一张图片 */
     }
 }
 #home {
@@ -127,7 +106,7 @@ min-height:700px;
     background-position: center; /* 图片居中对齐 */
     background-repeat: no-repeat; /* 防止图片重复 */
     /*background-blend-mode: overlay; !* 混合模式 *!*/
-    animation: backgroundImageAnimation 240s infinite; /* 动画持续时间120秒，循环播放 */
+    animation: backgroundImageAnimation 120s infinite; /* 动画持续时间120秒，循环播放 */
     transition: background-image 2s ease-in-out; /* 过渡效果 */
 }
     #home h1,#home h3 {
